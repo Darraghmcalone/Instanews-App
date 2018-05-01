@@ -1,0 +1,30 @@
+
+header, body {
+background-color: black;
+font-family: 'Open Sans', sans-serif;
+font-size: 16px;
+color:#ffffff;
+font-weight: lighter;
+@media(min-width: 
+60rem)
+;
+ }
+ 
+ 
+div.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0px;
+    /*@include desktop {
+        // width: 50%;
+    }*/
+}
+
+.insta-header{
+    background-color: black;
+}
+img{
+    background-color: black;
+}
+
