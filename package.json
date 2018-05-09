@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/Darraghmcalone/Instanews-App#readme",
   "devDependencies": {
+    "babel-eslint": "^8.2.3",
     "browser-sync": "^2.23.7",
     "gulp": "^4.0.0",
     "gulp-autoprefixer": "^5.0.0",
@@ -33,6 +34,9 @@
     "gulp-uglify": "^3.0.0"
   },
   "dependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.6.1",
+    "gulp-babel": "^7.0.1",
     "gulp-eslint": "^4.0.2"
   }
 }

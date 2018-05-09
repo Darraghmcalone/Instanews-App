@@ -9,12 +9,16 @@ var cssnano = require("gulp-cssnano");
 //var image = require("gulp-image");
 //var imageresize = require("gulp-image-resize");
 
-
+var babel = require('gulp-babel');
+//let {url, abstract} = value;
 
 
 gulp.task('scripts', function(done) {
  return gulp
      .src(['./js/*.js', '!node_modules/**'])
+     .pipe(babel({
+                  presets: ['env']
+              }))
      .pipe(eslint())
      .pipe(eslint.format())
      .pipe(eslint.failAfterError())

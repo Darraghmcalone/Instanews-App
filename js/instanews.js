@@ -1,6 +1,6 @@
 $(function() {
 
-    var nytData,
+    let nytData,
         nytItems,
         $loader = $('.ajax-loader'),
         $articles = $('.articles')
@@ -18,8 +18,8 @@ $(function() {
             nytData, nytItems = '';
 
             //Enpoint
-            var url = 'https://api.nytimes.com/svc/topstories/v2/';
-            var value = $(this).val();
+            let url = 'https://api.nytimes.com/svc/topstories/v2/';
+            let value = $(this).val();
             url += value + ('.json');
 
             url += '?' + $.param({
@@ -40,10 +40,10 @@ $(function() {
                         nytItems += '<ul>';
                         $.each(data.results, function(key, value) {
 
-                            var articleImageUrl = value.multimedia[4].url;
+                            let articleImageUrl = value.multimedia[4].url;
                             //if else
-                            var articleCaption = value.abstract;
-                            var articleLink = value.url;
+                            let articleCaption = value.abstract;
+                            let articleLink = value.url;
                             if(key<12){
 
 
@@ -62,7 +62,7 @@ $(function() {
                             nytItems += '</div>';
                             nytItems += '</div>';
                             nytItems += '</div>';
-                        };
+                        }
                         });
                         nytItems += '</ul>';
 

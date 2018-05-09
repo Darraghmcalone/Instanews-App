@@ -1,11 +1,13 @@
 {
   "extends": "eslint:recommended",
   "parserOptions": {
+  
     "ecmaVersion": 6
   },
   "rules": {
     "no-alert": 0,
     "no-bitwise": 0,
+    "parser": "babel-eslint",
     "camelcase": 1,
     "curly": 1,
     "eqeqeq": 1,
@@ -15,6 +17,7 @@
     "no-empty": 1,
     "quotes": [1, "single"]
   },
+
   "globals": {
     "jQuery": false,
     "$": false,
@@ -25,4 +28,5 @@
     "browser": true,
     "node": true
   }
+
 }
